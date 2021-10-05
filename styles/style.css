@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+html {
+    background-color: #CAEBEC;
+}
+nav {
+    background-color: #C1E4E6;
+    display: flex;
+    justify-content: space-between;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 85%;
+    max-width: 96em;
+    margin: 0 auto;
+}
+.title {
+    color: rgb(68, 61, 99);
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+}
+.search_bar {
+    flex-grow: 2;
+}
+.search{
+    border: none;
+    margin: 5px 0px;
+    /* padding: 5px 0px; */
+    border-radius: 25px;
+    width: 100%;
+}
+.nav_content {
+    color: rgb(68, 61, 99);
+    font-family: 'Pacifico', cursive;
+    padding: 15px 25px;
+}
+.card {
+    margin: 0 25px;
+}
+.card img{
+    max-height: 150px;
+}
+nav div {
+    display: flex;
+    justify-content: space-between;
+}
+.popular {
+    padding: 150px 0;
+}
+.popular p {
+    text-align: center;
+}
+.popular a {
+    text-decoration: none;
+    color: black;
+}
+.navbar{
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar a {
+    padding: 15px 25px;
+    background-color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    color: black;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.country {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(13, 3, 56, 0.9);
+    padding: 150px 0;
+}
+.country .title {
+    color: rgb(199, 228, 235);
+    margin: 25px 0;
+}
+.countries {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.countries span {
+    font-weight: 700;
+    text-align: center;
+    flex-basis: 15%;
+    min-width: 100px;
+    margin: 0;
+}
+.country span {
+    color: white;
+    margin: 15px 10px;
+    padding: 15px 25px;
+    background-color: #443D63;
+    border-radius: 25px;
+}
+.guarantee-cards {
+    text-align: center;
+    display: flex;
+    gap: 3%;
+    justify-content: center;
+    margin: 30px 0;
+}
+.guarantee {
+    margin: 30px 0;
+    text-align: center;
+}
+.guarantee a {
+    background-color: rgba(255,255,255 ,0.7);
+    display: inline-block;
+    padding: 15px 25px;
+    color: black;
+    border-radius: 25px;
+}
+.guarantee a:hover, .guarantee a:active {
+    padding: 25, 35;
+    background-color: rgba(255,255,255, 1);
+    transition: 0.3s;
+}
+.guarantee-card {
+    padding: 15px 25px;
+    background-color: rgba(255,255,255, 0.9);
+    width: 30%;
+    border-radius: 15px;
+}
+.guarantee-card img{
+    width: 200px;
+}
+footer {
+    background-color: rgba(0,0,0,0.9);
+    text-align: center;
+    color: white;
+}
+footer .container {
+    padding: 15px 0;
+}
+.hidden {
+    color: rgba(255,255,255,0.5);
+}
