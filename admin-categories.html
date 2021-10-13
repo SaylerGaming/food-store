@@ -33,19 +33,45 @@
             <button type="submit" class="edit">Создать</button>
         </div>
     </form>
-    <p class="title center">Ваши товары</p>
-    <div class="products container">
-        <div class="product">
-            <p>Название</p>
-            <p>Действия</p>
-        </div>
-        <div class="product">
-            <p>Категория 1</p>
-            <div>
-                <a class="edit" href="admin-edit.html">Изменить</a>
-                <a class="delete" href="#">Удалить</a>
-            </div>
-        </div>
-    </div>
+    <div class="container">
+    <p class="title center">Ваши категории</p>
+    <table class="products">
+        <thead>
+          <tr class="product">
+            <th class="tb-name">Название</th>
+            <th class="tb-action">Действия</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="product">
+            <td class="tb-name">Категория 1</td>
+            <td class="tb-action">
+                <div>
+                    <a class="edit" href="admin-category-edit.html">Изменить</a>
+                    <a class="delete" href="#">Удалить</a>
+                </div>
+            </td>
+          </tr>
+          <tr class="product">
+            <td class="tb-name">Категория 1</td>
+            <td class="tb-action">
+                <div>
+                    <a class="edit" href="admin-product-edit.html">Изменить</a>
+                    <a class="delete" href="#">Удалить</a>
+                </div>
+            </td>
+          </tr>
+          <tr class="product">
+            <td class="tb-name">Категория 1</td>
+            <td class="tb-action">
+                <div>
+                    <a class="edit" href="admin-product-edit.html">Изменить</a>
+                    <a class="delete" href="#">Удалить</a>
+                </div>
+            </td>
+          </tr>
+        </tbody>
+    </table>
+</div>
 </body>
 </html>
