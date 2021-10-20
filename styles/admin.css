@@ -70,6 +70,7 @@ a {
     width: 20%;
 }
 .edit {
+    display: inline-block;
     color: black;
     padding: 10px 15px;
     border-radius: 8px;

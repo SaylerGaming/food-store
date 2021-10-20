@@ -1,25 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+    <!-- Google-Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <!-- favicon -->
     <link rel="icon" type="image/png" href="img/favicon.png" />
-    <link rel="stylesheet" href="styles/login.css">
-    <title>FoodStore.dev Login</title>
-</head>
-<body>
-    <section class="register">
-        <form action="index.html">
-            <p>Регистрация</p>
-            <div class="login_flex">
-                <input type="text" placeholder="Имя">
-                <input type="text" placeholder="Фамилия">
+    <link rel="stylesheet" href="styles/registration.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+       
+      <div class="wrapper">
+            <a href="index.html">Вернуться на сайт</a>
+         <div class="title-text">
+            <div class="title login">
+               Логин
             </div>
-            <input type="email" placeholder="Почта">
-            <input type="password" placeholder="Пароль">
-            <input type="password" placeholder="Пароль">
-            <div class="btn">
-                <button type="submit">Зарегистрироваться</button>
+            <div class="title signup">
+               Регистрация
             </div>
-        </form>
-    </section>
-</body>
+         </div>
+         <div class="form-container">
+            <div class="slide-controls">
+               <input type="radio" name="slide" id="login" checked>
+               <input type="radio" name="slide" id="signup">
+               <label for="login" class="slide login">Логин</label>
+               <label for="signup" class="slide signup">Регистрация</label>
+               <div class="slider-tab"></div>
+            </div>
+            <div class="form-inner">
+               <form action="#" class="login">
+                  <div class="field">
+                     <input type="text" placeholder="Email" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Пароль" required>
+                  </div>
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <input type="submit" value="Логин">
+                  </div>
+                  <div class="signup-link">
+                     Еще не зарегестрировался? <a href="">Регистрация</a>
+                  </div>
+               </form>
+               <form action="#" class="signup">
+                  <div class="field">
+                     <input type="text" placeholder="Email" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Пароль" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Повторить пароль" required>
+                  </div>
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <input type="submit" value="Регистрация">
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+      <script>
+         const loginText = document.querySelector(".title-text .login");
+         const loginForm = document.querySelector("form.login");
+         const loginBtn = document.querySelector("label.login");
+         const signupBtn = document.querySelector("label.signup");
+         const signupLink = document.querySelector("form .signup-link a");
+         signupBtn.onclick = (()=>{
+           loginForm.style.marginLeft = "-50%";
+           loginText.style.marginLeft = "-50%";
+         });
+         loginBtn.onclick = (()=>{
+           loginForm.style.marginLeft = "0%";
+           loginText.style.marginLeft = "0%";
+         });
+         signupLink.onclick = (()=>{
+           signupBtn.click();
+           return false;
+         });
+      </script>
+   </body>
 </html>
