@@ -4,7 +4,7 @@
     <!-- Google-Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
@@ -18,45 +18,40 @@
 <body>
     <nav>
         <div>
-            <a href="index.html" class="nav_content">FoodStore</a>
-        </div>
-        <div class="search_bar">
-            <input class="search" type="search" placeholder="Поиск">
+            <a href="index.html" class="nav_content animated">FoodStore</a>
         </div>
         <div>
-            <a href="companies.html"><p class="nav_content">Все компании</p></a>
-            <a href="categories.html"><p class="nav_content">Все категории</p></a>
+            <a href="companies.html"><p class="nav_content animated">Все компании</p></a>
+            <a href="categories.html"><p class="nav_content animated">Все категории</p></a>
         </div>
     </nav>
+
     <section class="navbar">
-        <div>
-            <p>Зарегистрируйся или войди в аккаунт!</p>
-        </div>
-        <div>
             <a class="inline" href="admin-index.html">Ваша компания</a>
+            <div class="search_bar">
+                <input class="search" type="search" placeholder="Поиск">
+            </div>
             <a class="inline" href="login.html">Войти</a>
-        </div>
+            
     </section>
     <section class="popular">
-        <div class="container">
-            <p class="title">Популярные товары</p>
-            <div class="cards">
-                <div class="card">
-                    <a href="company.html"><img src="img/companies/kfc-logo.png" alt="kfc_img">
-                    <p>KFC</p></a>
-                </div>
-                <div class="card">
-                    <a href="company.html"><img src="img/companies/Burger-King-logo.png" alt="kfc_img">
-                    <p><a href="company.html">Burger king</p></a>
-                </div>
-                <div class="card">
-                    <a href="company.html"><img src="img/companies/gippo-logo.png" alt="kfc_img">
-                    <p><a href="company.html">Gippo</p></a>
-                </div>
-                <div class="card">
-                    <a href="company.html"><img src="img/companies/Hardees-logo.png" alt="kfc_img">
-                    <p><a href="company.html">Hardees</p></a>
-                </div>
+        <p class="title">Популярные рестораны</p>
+        <div class="cards">
+            <div class="card">
+                <a href="company.html"><img src="img/companies/kfc-logo.png" alt="kfc_img">
+                <p>KFC</p></a>
+            </div>
+            <div class="card">
+                <a href="company.html"><img src="img/companies/Burger-King-logo.png" alt="kfc_img">
+                <p>Burger king</p>
+            </div>
+            <div class="card">
+                <a href="company.html"><img src="img/companies/gippo.png" alt="kfc_img">
+                <p>Gippo</p>
+            </div>
+            <div class="card">
+                <a href="company.html"><img src="img/companies/Hardees-logo.png" alt="kfc_img">
+                <p>Hardees</p></a>
             </div>
         </div>
     </section>
@@ -75,28 +70,28 @@
         </div>
     </section>
     <section class="guarantees">
-        <div class="guarantee">
-            <p class="title">Мы гарантируем: </p>
-            <div class="guarantee-cards">
-                <div class="guarantee-card">
-                    <img src="img/guarantee-1.png" alt="img">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil et debitis ad aspernatur molestias nulla id, saepe officiis est atque enim vitae ipsam doloremque quos blanditiis accusantium! Voluptatum, rem officiis!</p>
-                </div>
-                <div class="guarantee-card">
-                    <img src="img/guarantee-2.png" alt="img">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil et debitis ad aspernatur molestias nulla id, saepe officiis est atque enim vitae ipsam doloremque quos blanditiis accusantium! Voluptatum, rem officiis!</p>
-                </div>
-                <div class="guarantee-card">
-                    <img src="img/guarantee-3.png" alt="img">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil et debitis ad aspernatur molestias nulla id, saepe officiis est atque enim vitae ipsam doloremque quos blanditiis accusantium! Voluptatum, rem officiis!</p>
-                </div>
+        <p class="title">Мы гарантируем: </p>
+        <div class="guarantee-cards first">
+            <div class="guarantee-card">
+                <img src="img/guarantee-1.png" alt="img">
+                <p>Лучшие рестораны вашего города. В нашем приложении — огромный выбор ресторанов. Закажите свою любимую еду или откройте для себя новые рестораны поблизости!</p>
             </div>
+            <div class="guarantee-card">
+                <img src="img/guarantee-2.png" alt="img">
+                <p>Быстрая доставка. Наш плюс — скорость. Закажите доставку в черте города и мы все доставим за считанные минуты.</p>
+            </div>
+            <div class="guarantee-card last">
+                <img src="img/guarantee-3.png" alt="img">
+                <p>Доставка продуктов и не только. В нашем приложении есть все необходимое! От супермаркетов до небольших магазинов, от аптек до флористических бутиков — если нужный товар продается в вашем городе, мы доставим его вам!</p>
+            </div>
+        </div>
+        <div class="company-button">
             <a href="company.html">Взять заказ</a>
         </div>
     </section>
     <footer>
         <div class="container">
-            <p>Выполнено Русланом шигабутдиновым для выполнения лаболаторной работы номер 3. Все права защищены, даже не стоит проверять.</p>
+            <p>Выполнено Русланом шигабутдиновым и темирланом Таукелов для выполнения лаболаторной работы. Все права защищены, даже не стоит проверять.</p>
             <p class="hidden" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente dicta, voluptas doloremque odio, laboriosam eos, nam quidem non repellat ullam saepe aperiam architecto aliquam perferendis dolore. Sit esse velit facere.</p>
         </div>
     </footer>
