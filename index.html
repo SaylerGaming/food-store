@@ -12,11 +12,12 @@
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <!-- CSS -->
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
     <!-- site-name -->
     <title>FoodStore.dev</title>
 </head>
 <body>
-    <nav>
+    <!-- <nav>
         <div>
             <a href="index.html" class="nav_content animated">FoodStore</a>
         </div>
@@ -33,7 +34,22 @@
             </div>
             <a class="inline" href="login.html">Войти</a>
             
-    </section>
+    </section> -->
+    <header>
+        <a href="index.html"><h1 class="logo title">FoodStore</h1></a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+          <ul>
+            <li><a href="companies.html">Все компании</a></li>
+            <li><a href="categories.html">Все категории</a></li>
+            <li><a href="login.html">Войти</a></li>
+          </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+    </header>
+    <div class="content">
     <section class="popular">
         <p class="title">Популярные рестораны</p>
         <div class="cards">
@@ -55,6 +71,7 @@
             </div>
         </div>
     </section>
+</div>
     <section class="country">
         <div class="container">
         <p class="title">Выбери свой город!</p>
