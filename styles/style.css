@@ -194,7 +194,7 @@ footer .container {
 }
 .search-button button{
     border: none;
-    background-color: none;
+    background-color: transparent;
 }
 .modal-bg{
     position: fixed;
@@ -219,14 +219,13 @@ footer .container {
     position: relative;
     background-color: white;
     width: 50%;
-    height: 10%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 .modal-close{
     position: absolute;
-    top: 25px;
+    top: 50%;
     right: 25px;
     font-weight: bold;
     cursor: pointer;
