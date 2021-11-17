@@ -186,3 +186,59 @@ footer .container {
 .inline {
     display: inline-block;
 }
+.search-button{
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+.search-button button{
+    border: none;
+    background-color: none;
+}
+.modal-bg{
+    position: fixed;
+    width: 200%;
+    height: 100vh;
+    top: 0;
+    left: -50%;
+    background-color: rgba(0, 40, 25, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+.bg_active{
+    visibility: visible;
+    opacity: 1;
+}
+.modal{
+    border-radius: 15px;
+    position: relative;
+    background-color: white;
+    width: 50%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.modal-close{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.modal button{
+    padding: 10px, 30px;
+    width: 100px;   
+    background-color: #1f8530;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-bg input{
+    width: 70%;
+}
