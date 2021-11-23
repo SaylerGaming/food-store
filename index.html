@@ -40,9 +40,21 @@
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
         <nav>
           <ul>
-            <li><a href="companies.html">Все компании</a></li>
-            <li><a href="categories.html">Все категории</a></li>
-            <li><a href="login.html">Войти</a></li>
+              <li><div class="modal-bg">
+                <div class="modal">
+                    <h2>Поиск: </h2>
+                    <input type="text" name="text">
+                    <a href="index.html"><img src="img/search-bar.png" alt=""></a>
+                    <span class="modal-close">X</span>
+                </div>
+            </div>
+                <div class="search-button">
+                    <button>Искать</button>
+                </div>
+                <script src="modal.js"></script></li>
+            <li><a class="nav-link" href="companies.html">Все компании</a></li>
+            <li><a class="nav-link" href="categories.html">Все категории</a></li>
+            <li><a class="nav-link" href="login.html">Войти</a></li>
           </ul>
         </nav>
         <label for="nav-toggle" class="nav-toggle-label">
@@ -70,6 +82,7 @@
                 <p>Hardees</p></a>
             </div>
         </div>
+        
     </section>
 </div>
     <section class="country">
